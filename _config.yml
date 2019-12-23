@@ -1,1 +1,6 @@
 theme: jekyll-theme-minimal
+title: Hello World Title
+description: Just for testing how github theme works
+logo: logo.png
+show_downloads: true
+google_analytics: UA-154959453-1
