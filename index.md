@@ -11,15 +11,8 @@ layout: default
 *   That guy that has vertical screen for Reddit
 *   [Hacker Typer](http://hackertyper.com/)
 
-## Skills
-| Languages    | 
-|:-------------|
-| Java         | 
-| C#           | 
-| Python       | 
-| Javascript   |
-| SQL          |
-| VBA          |
+## Languages
+Java, C#, Python, Javascript, SQL, VBA
 
 ## Notable Experiences
 - Worked on a document processing feature from start to finish, it includes:
