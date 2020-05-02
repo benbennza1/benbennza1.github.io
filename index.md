@@ -25,4 +25,4 @@ Java, C#, Python, Javascript, SQL, VBA
     - Caused by inconsistent newline endings on the js files 
     - Fixed by replacing the "non-breaking space" with space :)
 
-[Where I stole the page from](https://github.com/pages-themes/minimal.)
+[Where I stole the page from](https://github.com/pages-themes/minimal)
