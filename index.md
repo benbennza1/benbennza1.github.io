@@ -14,12 +14,18 @@ layout: default
 ## Languages
 Java, C#, Python, Javascript, SQL, VBA
 
-## Notable Experiences
-- Worked on a document processing feature from start to finish, it includes:
-    - Windows Form Application for creating builds for deploying Tomcat Server
-    - Tomcat server servlet for processing document and generating report
-    - Utility executable for extrating data from the document
-    - Front end code to handle server report response
+## Experiences
+
+### SOFTWARE DEVELOPER
+-	Developed and maintained a GIT-like solution to automate workflow with structured content extracted from pharmaceutical documents
+-	Supported both server and client software deployments
+-	Created automated build tools for Windows Installations for deployment using WIX(C#) 
+-	Collaborated with the QA team to develop SQL scripts to populate and prepare test data
+-	Provided customer support by resolving customer inquiries, concerns, and bugs
+-	Extended Java servlet for the backend Tomcat server to upgrade legacy data to new data 
+-	Trained new hires on company specific code workflow and structure 
+-	Worked on a document processing feature from conception to delivery 
+
 - Fixed a minor bug in public package [FileSaver.js](https://github.com/eligrey/FileSaver.js)
     - Issue: IE unable to recognize '{'
     - Caused by inconsistent newline endings on the js files 
