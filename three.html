@@ -29,6 +29,7 @@
             Jump: SPACE<br>
             Look: MOUSE<br>
             Base code from: https://threejs.org/examples/ <br>
+            Currently only supported on desktop browsers<br>
         </div>
     </div>
     <!-- <script src="js/three.js"></script> -->
@@ -50,6 +51,8 @@
         var direction = new THREE.Vector3();
         var vertex = new THREE.Vector3();
         var color = new THREE.Color();
+
+        var g_size = 100;
 
         init();
         animate();
@@ -182,8 +185,25 @@
 
             var position = boxGeometry.attributes.position;
 
-            for (var i = 0; i < 10; i++) {
-                var pictureIndex = i % 3;
+            // loop to get the max number to loop
+            g_size = 0;
+            while (true) {
+                if (!imageExists('images/three/gallery/' + g_size++ + '.png')) {
+                    break;
+                }
+            }
+
+            // Garentee minimum 10 art works
+            var sizeToLoop = g_size > 10 ? g_size : 10;
+            var pictureIndex;
+            for (var i = 0; i < sizeToLoop; i++) {
+                if (g_size < 10) {
+                    pictureIndex = i % (g_size - 1);
+                }
+                else {
+                    pictureIndex = i;
+                }
+
                 var boxTexture = new THREE.TextureLoader().load('images/three/gallery/' + pictureIndex + '.png');
                 boxTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
                 boxTexture.repeat.set(1, 1);
@@ -219,6 +239,17 @@
             //
 
             window.addEventListener('resize', onWindowResize, false);
+
+        }
+
+        function imageExists(image_url) {
+
+            var http = new XMLHttpRequest();
+
+            http.open('HEAD', image_url, false);
+            http.send();
+
+            return http.status != 404;
 
         }
 
