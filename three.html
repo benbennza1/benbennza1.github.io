@@ -183,7 +183,7 @@
             var position = boxGeometry.attributes.position;
 
             for (var i = 0; i < 10; i++) {
-                var pictureIndex = i % 2;
+                var pictureIndex = i % 3;
                 var boxTexture = new THREE.TextureLoader().load('images/three/gallery/' + pictureIndex + '.png');
                 boxTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
                 boxTexture.repeat.set(1, 1);
